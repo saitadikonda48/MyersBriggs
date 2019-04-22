@@ -1,0 +1,113 @@
+{% load crispy_forms_tags %}
+
+<!doctype html>
+<html lang="en">
+	{% include 'header.html'%}
+  <body>
+  	
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    	<div class="col-md-2 offset-md-5">
+		  <a class="navbar-brand" href="/" style="font-size:1.5em;">Personality Test</a>
+		</div>
+</nav>
+
+<h1 style="text-align:center;">Most Common Words Standardized</h1>
+
+<main role="main" class="container">
+
+</main>
+
+    <table>
+    <tr>
+        <th>Personality Type</th>
+        <th>#1</th>
+        <th>#2</th>
+        <th>#3</th>
+        <th>#4</th>
+        <th>#5</th>
+        <th>#6</th>
+        <th>#7</th>
+        <th>#8</th>
+        <th>#9</th>
+        <th>#10</th>
+        <th>#11</th>
+        <th>#12</th>
+        <th>#13</th>
+        <th>#14</th>
+        <th>#15</th>
+        <th>#16</th>
+        <th>#17</th>
+        <th>#18</th>
+        <th>#19</th>
+        <th>#20</th>
+    </tr>
+    <tr> 
+    <td> Extraversion </td>
+    {% for item in arrE %}
+
+      <td>{{ item }}</td>
+
+    {% endfor %}
+    </tr>
+    <td> Introversion </td>
+    {% for item in arrI %}
+
+      <td>{{ item }}</td>
+
+    {% endfor %}
+    </tr>
+    <td> Intuition </td>
+    {% for item in arrN %}
+
+      <td>{{ item }}</td>
+
+    {% endfor %}
+    </tr>
+    <td> Sensing </td>
+    {% for item in arrS %}
+
+      <td>{{ item }}</td>
+
+    {% endfor %}
+    </tr>
+    <td> Thinking </td>
+    {% for item in arrT %}
+
+      <td>{{ item }}</td>
+
+    {% endfor %}
+    </tr>
+    <td> Feeling </td>
+    {% for item in arrF %}
+
+      <td>{{ item }}</td>
+
+    {% endfor %}
+    </tr>
+    <td> Judging </td>
+    {% for item in arrJ %}
+
+      <td>{{ item }}</td>
+
+    {% endfor %}
+    </tr>
+    <td> Perceiving </td>
+    {% for item in arrP %}
+
+      <td>{{ item }}</td>
+
+    {% endfor %}
+    </tr>
+
+    
+    
+    </table>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"><hr></span>
+      </div>
+    </footer>
+{% include 'javascript.html' %}
+
+</html>
